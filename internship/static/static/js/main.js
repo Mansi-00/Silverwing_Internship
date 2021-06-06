@@ -1,3 +1,5 @@
+{% load static %}
+
 $(document).ready(function() {
 "use strict";
 
@@ -72,10 +74,10 @@ function preload() {
 //-- usage --//
 //add your pics below to preload
 preload(
-    "img/blurpic.png",
-	"img/mainpic.png",
-	"img/profilepic.png",
-	"img/preloader.gif"
+    "{% static 'img/blurpic.png' %}",
+	"{% static 'img/mainpic.png' %}",
+	"{% static 'img/profilepic.png' %}",
+	"{% static 'img/preloader.gif' %}"
 )
 
 /*============= Touch Mobile ===========*/

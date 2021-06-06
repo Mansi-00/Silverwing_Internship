@@ -1,3 +1,4 @@
+{% load static %}
 /*------------------------------------------------------------------
 [Table of contents]
 
@@ -274,9 +275,11 @@ h1 {
 }
 .side-right {
 	right: 0;
-	background: url(../img/mainpic.png) no-repeat center top;
+
+	background: url({% static '.../img/pic1.jpg' %}) no-repeat center top;
 	background-size: cover;/* avoid gap */
 }
+
 .open-right .portfolio {
 	visibility: hidden;
 	opacity: 1;
